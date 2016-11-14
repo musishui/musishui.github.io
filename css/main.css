@@ -939,9 +939,14 @@ pre .javascript .function {
   margin: 10px;
   font-size: 14px;
   color: #ccc;
+  transition: all ease-in 0.2s;
 }
 .tag-cloud a:hover {
-  font-size: 30px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
   color: #111;
 }
 .back-to-top {
@@ -1808,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b9b1cb;
+  background: #aabf77;
 }
 .links-of-blogroll {
   font-size: 13px;
