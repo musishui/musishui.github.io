@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
@@ -13,8 +13,17 @@
 
 
 
+
+
+
+
+
+
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
 
 
 
@@ -65,7 +74,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -77,7 +86,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
 
 
 
@@ -86,12 +95,12 @@
 
 <meta name="description" content="musishui 的个人博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="musishui's Blog">
+<meta property="og:title" content="musishui&#39;s Blog">
 <meta property="og:url" content="https://musishui.github.io/index.html">
-<meta property="og:site_name" content="musishui's Blog">
+<meta property="og:site_name" content="musishui&#39;s Blog">
 <meta property="og:description" content="musishui 的个人博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="musishui's Blog">
+<meta name="twitter:title" content="musishui&#39;s Blog">
 <meta name="twitter:description" content="musishui 的个人博客">
 
 
@@ -101,7 +110,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -126,11 +135,7 @@
 
 
 
-  <title> musishui's Blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>musishui's Blog</title>
   
 
 
@@ -141,37 +146,49 @@
 
 
 
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
+  <div class="container sidebar-position-left 
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">musishui's Blog</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">musishui's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-  <p class="site-subtitle"></p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -191,8 +208,18 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -202,11 +229,21 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -228,7 +265,7 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand blog-list">
+  <section id="posts" class="posts-expand">
     
       
 
@@ -239,20 +276,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/12/08/Hostory-API-学习/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2017/08/08/HTTP、HTTp-2-0、SPDY、HTTPS-你应该知道的一些事/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -260,36 +294,26 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/12/08/Hostory-API-学习/" itemprop="url">
-                  Hostory API 学习
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/08/08/HTTP、HTTp-2-0、SPDY、HTTPS-你应该知道的一些事/" itemprop="url">HTTP、HTTP2.0、SPDY、HTTPS 你应该知道的一些事</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-08T09:07:30+08:00">
-              2016-12-08
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T17:11:10+08:00">
+                2017-08-08
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-12-08T09:08:47+08:00">
-              2016-12-08
-            </time>
             
           </span>
 
@@ -300,18 +324,17 @@
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -321,29 +344,16 @@
       
         
           
-            <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>HTML5 History API 为开发者提供在不刷新浏览器页面的情况下修改 URL 的能力，在这之前，如果开发者修改 url 就会全页面刷新。History API 可以让我们灵活控制浏览器地址栏线上的内容，为我们的开发提供了更多的便利。在今天，单页面应用大行其道，除了 ajax 技术之外，History API 也功不可没，它为我们提供了更友好的地址栏接口，让地址栏地址更可读。</p>
-<h2 id="History-对象"><a href="#History-对象" class="headerlink" title="History 对象"></a>History 对象</h2><p>在浏览器的控制台中，查看history，我们可以看到 History 为我们提供的属性和方法。</p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ul>
-<li><strong><code>history.lenght</code></strong><br>  历史回话个数，这个个数包括当前页，当打开一个浏览器的空白页面时，history.lenght = 1。</li>
-<li><strong><code>history.state</code></strong><br>  当前回话的 state，state 可以是任意类型，它有 <code>history.pushState</code> 或 <code>history.replaceState</code> 的第一个参数定义。</li>
-</ul>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
-<li><p><strong><code>history.go([number])</code></strong><br>  浏览器前进或回退指定步骤。参数小于 0 时，浏览器回退指定的步骤，参数大于 0 时，浏览器前进指定的步骤。如果参数值太大或者太小时，方法无效果。</p>
-</li>
-<li><p><strong><code>history.back()</code></strong><br>  浏览器回退到前一个页面。相当于点击浏览器的回退按钮。等价于 <code>history.go(-1)</code>。</p>
-</li>
-<li><p><strong><code>history.forward()</code></strong><br>  浏览器前进到后一个页面。相当于点击浏览器的前进按钮。等价于 <code>history.go(1)</code>。</p>
-</li>
-<li><p><strong><code>history.pushState([data], [title], [url])</code></strong><br>  向 history 栈中添加一个会话。参数 data 为会话中数据，可以开发者自定义。title 为页面标题，现在还没有浏览器支持。url 为会话的 url。pushState 后，浏览器地址栏会跟着变化，但页面不会刷新，history.length 的值 +1。</p>
-</li>
-<li><p><strong><code>history.replaceState([data], [title], [url])</code></strong><br>  修改 history 中当前的会话。参数 data 为会话中数据，可以开发者自定义。title 为页面标题，现在还没有浏览器支持。url 为会话的 url。replaceState 后，浏览器地址栏会跟着变化，但页面不会刷新，history.length 的值不变。</p>
-</li>
-</ul>
-<h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><ul>
-<li><strong><code>popstate</code></strong><br>  浏览器回退时触发 popstate 事件。<code>history.back()</code> 和 <code>history.go([number &lt; 0])</code> 时也会触发 popstate 事件。</li>
-</ul>
-
-          
+          作为一个经常和web打交道的程序员，了解这些协议是必须的，本文就向大家介绍一下这些协议的区别和基本概念，文中可能不局限于前端知识，还包括一些运维，协议方面的知识，希望能给读者带来一些收获，如有不对之处还请指出。
+web始祖HTTP全称：超文本传输协议(HyperText Transfer Proto
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/08/HTTP、HTTp-2-0、SPDY、HTTPS-你应该知道的一些事/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -356,8 +366,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -380,20 +395,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/21/Web-Storage-学习/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/12/08/Hostory-API-学习/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -401,36 +413,26 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/21/Web-Storage-学习/" itemprop="url">
-                  Web Storage 学习
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/12/08/Hostory-API-学习/" itemprop="url">Hostory API 学习</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-21T14:01:48+08:00">
-              2016-11-21
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-08T09:07:30+08:00">
+                2016-12-08
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-21T14:03:47+08:00">
-              2016-11-21
-            </time>
             
           </span>
 
@@ -441,18 +443,17 @@
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -462,71 +463,15 @@
       
         
           
-            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>html5 中的 Web Storage 包括了两种存储方式：sessionStorage 和 localStorage。 sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问，会话结束后数据也随之销毁。localStorage 用于存储一个域名下的需要永久存在在本地的数据，这些数据可以被一直访问，直到这些数据被删除。因此sessionStorage 和 localStorage 的主要区别在于他们存储数据的生命周期，sessionStorage 存储的数据的生命周期是一个会话，而 localStorage 存储的数据的生命周期是永久，直到被主动删除，否则数据永远不会过期的。</p>
-<h2 id="Web-Storage-和-cookie-的异同点及优劣势"><a href="#Web-Storage-和-cookie-的异同点及优劣势" class="headerlink" title="Web Storage 和 cookie 的异同点及优劣势"></a>Web Storage 和 cookie 的异同点及优劣势</h2><p>Web Storage 和 cookie 有许多相同之处：</p>
-<ul>
-<li>它们都可以用于存储用户数据</li>
-<li>它们存储数据的格式都是字符串形式</li>
-<li>它们存储的数据都有大小限制</li>
-</ul>
-<p>Web Storage 和 cookie 也有不同之处：</p>
-<ul>
-<li>它们的生命周期不同。sessionStorage 的生命周期是一个会话，localStorage的生命周期是永久，cookie 的生命周期可以自定义，cookie 可以设置过期时间，数据在过期时间之前可以访问。</li>
-<li>它们的存储大小限制不同。大部分现代浏览器 Storage 的存储限制大小为 5M，cookie 的存储大小限制 为 4K。</li>
-<li>浏览器支持不同，API 调用方式不同。</li>
-</ul>
-<p>相比 cookie ，Web Storage 的优点主要表现在存储空间更大，可存储的内容更大。cookie每次都随请求数据发送到服务器端，Web Storage不会和请求数据一同发送到服务器端，占用带宽更少。缺点主要表现在，现在所有浏览器都支持 cookie 操作，而只有现在浏览器才支持 Web Storage 操作，如果需要兼容老旧浏览器，就不能使用 Web Storage。</p>
-<h2 id="Web-Storage-API"><a href="#Web-Storage-API" class="headerlink" title="Web Storage API"></a>Web Storage API</h2><p>localStorage 和 sessionStorage 有着统一的API接口，这为二者的操作提供了极大的便利。下面以 localStorage 为例来介绍一下 API 接口使用方法，同样这些接口也适用于 sessionStorage。</p>
-<ul>
-<li><p>添加键值对：localStorage.setItem(key, value)</p>
-<p>  <code>setItem</code> 用于把值 value 存储到键key上，除了使用 <code>setItem</code> ，还可以使用 <code>localStorage.key = value</code> 或者 <code>localStorage[&#39;key&#39;] = value</code> 这两种形式。另外需要注意的是，key和value值必须是字符串形式的，如果不是字符串，会调用它们相应的<code>toString()</code> 方法来转换成字符串再存储。当我们要存储对象是，应先转换成我们可识别的字符串格式（比如JSON格式）再进行存储。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">// 把一个用户名(lilei)存储到 name 的键上</span></div><div class="line">localStorage.setItem(<span class="string">'name'</span>, <span class="string">'lilei'</span>);</div><div class="line"><span class="comment">// localStorage.name = 'lilei';</span></div><div class="line"><span class="comment">// localStorage['name'] = 'lilei';</span></div><div class="line"><span class="comment">// 把一个用户存储到user的键上</span></div><div class="line">localStorage.setItem(<span class="string">'user'</span>, <span class="built_in">JSON</span>.stringify(id:<span class="number">1</span>, <span class="attr">name</span>:<span class="string">'lilei'</span>));</div></pre></td></tr></table></figure>
-<ul>
-<li><p>获取键值：localStorage.getItem(key)</p>
-<p>  <code>getItem</code> 用于获取键 key 对应的数据，和 <code>setItem</code> 一样，<code>getItem</code> 也有两种等效形式 <code>value = localStorage.key</code> 和 <code>value = localStorage[&#39;key&#39;]</code> 。获取到的 value 值是字符串类型，如果需要其他类型，要做手动的类型转换。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">// 获取存储到 name 的键上的值</span></div><div class="line"><span class="keyword">var</span> name = localStorage.getItem(<span class="string">'name'</span>);</div><div class="line"><span class="comment">// var name = localStorage.name;</span></div><div class="line"><span class="comment">// var name = localStorage['name'];</span></div><div class="line"><span class="comment">// 获取存储到user的键上的值</span></div><div class="line"><span class="keyword">var</span> user = <span class="built_in">JSON</span>.parse(localStorage.getItem(<span class="string">'user'</span>));</div></pre></td></tr></table></figure>
-<ul>
-<li><p>删除键值对：localStorage.removeItem(key)</p>
-<p>  <code>removeItem</code> 用于删除指定键的项，localStorage 没有数据过期的概念，所有数据如果失效了，需要开发者手动删除。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = localStorage.getItem(<span class="string">'name'</span>); <span class="comment">// 'lilei'</span></div><div class="line"><span class="comment">// 删除存储到 name 的键上的值</span></div><div class="line">localStorage.removeItem(<span class="string">'name'</span>);</div><div class="line">name = localStorage.getItem(<span class="string">'name'</span>); <span class="comment">// null</span></div></pre></td></tr></table></figure>
-<ul>
-<li><p>清除所有键值对：localStorage.clear()</p>
-<p>  <code>clear</code> 用于删除所有存储的内容，它和<code>removeItem</code>不同的地方是<code>removeItem</code> 删除的是某一项，而clear是删除所有。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 清除 localStorage</span></div><div class="line">localStorage.clear();</div><div class="line"><span class="keyword">var</span> len = localStorage.length; <span class="comment">// 0</span></div></pre></td></tr></table></figure>
-<ul>
-<li><p>获取 localStorage 的属性名称(键名称)：localStorage.key(index)</p>
-<p>  <code>key</code> 方法用于获取指定索引的键名称。需要注意的是赋值早的键值对应的索引值大，赋值完的键值对应的索引小, <code>key</code>方法可用于遍历 localStorage 存储的键值。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">localStorage.setItem(<span class="string">'name'</span>,<span class="string">'lilei'</span>);</div><div class="line"><span class="keyword">var</span> key = localStorage.key(<span class="number">0</span>); <span class="comment">// 'name'</span></div><div class="line">localStorage.setItem(<span class="string">'age'</span>, <span class="number">10</span>);</div><div class="line">key = localStorage.key(<span class="number">0</span>); <span class="comment">// 'age'</span></div><div class="line">key = localStorage.key(<span class="number">1</span>); <span class="comment">// 'name'</span></div></pre></td></tr></table></figure>
-<ul>
-<li><p>获取 localStorage 中保存的键值对的数量：localStorage.length</p>
-<p>  <code>length</code> 属性用于获取 localStorage 中键值对的数量。</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">localStorage.setItem(<span class="string">'name'</span>,<span class="string">'lilei'</span>);</div><div class="line"><span class="keyword">var</span> len = localStorage.len; <span class="comment">// 1</span></div><div class="line">localStorage.setItem(<span class="string">'age'</span>, <span class="number">10</span>);</div><div class="line">len = localStorage.len; <span class="comment">// 2</span></div></pre></td></tr></table></figure>
-<h2 id="Web-Storage-事件"><a href="#Web-Storage-事件" class="headerlink" title="Web Storage 事件"></a>Web Storage 事件</h2><ul>
-<li><p>storage 事件</p>
-<p>  当存储的数据发生变化时，会触发 storage 事件。但要注意的是它不同于click类的事件会事件捕获和冒泡，storage 事件更像是一个通知，不可取消。<strong>触发这个事件会调用同域下其他窗口的storage事件，不过触发storage的窗口（即当前窗口）不触发这个事件</strong>。</p>
-<p>  storage 的 event 对象的常用属性如下：</p>
-<pre><code>oldValue：更新前的值。如果该键为新增加，则这个属性为null。
-newValue：更新后的值。如果该键被删除，则这个属性为null。
-url：原始触发storage事件的那个网页的网址。
-key：存储store的key名
-</code></pre></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">storageChanged</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'storage'</span>, storageChanged, <span class="literal">false</span>);</div></pre></td></tr></table></figure>
-<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>基于 Web Storage 的特点，它主要被用于储存一些不经常改动的，不敏感的数据，比如全国省市区县信息。还可以存储一些不太重要的跟用户相关的数据，比如说用户的头像地址、主题颜色等，这些信息可以先存储在用户本地一份，便于快速呈现，等真正从服务器端读取成功后再更改头像地址，主题颜色。另外，基于 storage 事件特点，Web Storage 还可以用于同域不同窗口间的通信。</p>
-
-          
+          引言HTML5 History API 为开发者提供在不刷新浏览器页面的情况下修改 URL 的能力，在这之前，如果开发者修改 url 就会全页面刷新。History API 可以让我们灵活控制浏览器地址栏线上的内容，为我们的开发提供了更多的便利。在今天，单页面应用大行其道，除了 ajax 技术之外，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/08/Hostory-API-学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -539,8 +484,13 @@ key：存储store的key名
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -563,20 +513,17 @@ key：存储store的key名
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/12/移动端高清、多屏适配方案/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/21/Web-Storage-学习/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -584,36 +531,26 @@ key：存储store的key名
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/12/移动端高清、多屏适配方案/" itemprop="url">
-                  [转] 移动端高清、多屏适配方案
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/21/Web-Storage-学习/" itemprop="url">Web Storage 学习</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-12T11:08:49+08:00">
-              2016-11-12
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-21T14:01:48+08:00">
+                2016-11-21
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-12T14:15:43+08:00">
-              2016-11-12
-            </time>
             
           </span>
 
@@ -624,18 +561,17 @@ key：存储store的key名
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -645,201 +581,15 @@ key：存储store的key名
       
         
           
-            <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ul>
-<li>开发移动端H5页面</li>
-<li>面对不同分辨率的手机</li>
-<li>面对不同屏幕尺寸的手机</li>
-</ul>
-<h2 id="视觉稿"><a href="#视觉稿" class="headerlink" title="视觉稿"></a>视觉稿</h2><p>在前端开发之前，视觉MM会给我们一个psd文件，称之为视觉稿。</p>
-<p>对于移动端开发而言，为了做到页面高清的效果，视觉稿的规范往往会遵循以下两点：</p>
-<ul>
-<li>首先，选取一款手机的屏幕宽高作为基准(以前是iPhone4的320×480，现在更多的是iphone6的375×667)。</li>
-<li>对于retina屏幕(如: dpr=2)，为了达到高清效果，视觉稿的画布大小会是基准的2倍，也就是说像素点个数是原来的4倍（对iphone6而言：原先的375×667，就会变成750×1334）。</li>
-</ul>
-<p>问题：</p>
-<ul>
-<li>对于dpr=2的手机，为什么画布大小×2，就可以解决高清问题？</li>
-<li>对于2倍大小的视觉稿，在具体的css编码中如何还原每一个区块的真实宽高(也就是布局问题)?</li>
-</ul>
-<p>带着问题，往下看…</p>
-<h2 id="一些概念"><a href="#一些概念" class="headerlink" title="一些概念"></a>一些概念</h2><p>在进行具体的分析之前，首先得知道下面这些关键性基本概念(术语)。</p>
-<p><strong>物理像素(physical pixel)</strong></p>
-<p>一个物理像素是显示器(手机屏幕)上最小的物理显示单元，在操作系统的调度下，每一个设备像素都有自己的颜色值和亮度值。</p>
-<p><strong>设备独立像素(density-independent pixel)</strong></p>
-<p>设备独立像素(也叫密度无关像素)，可以认为是计算机坐标系统中得一个点，这个点代表一个可以由程序使用的虚拟像素(比如: css像素)，然后由相关系统转换为物理像素。</p>
-<p>所以说，物理像素和设备独立像素之间存在着一定的对应关系，这就是接下来要说的设备像素比。</p>
-<p><strong>设备像素比(device pixel ratio)</strong></p>
-<p>设备像素比(简称dpr)定义了物理像素和设备独立像素的对应关系，它的值可以用如下的公式的得到：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设备像素比 = 物理像素 / 设备独立像素 <span class="comment">// 在某一方向上，x方向或者y方向</span></div></pre></td></tr></table></figure>
-<p>在javascript中，可以通过<code>window.devicePixelRatio</code>获取到当前设备的dpr。</p>
-<p>在css中，可以通过<code>-webkit-device-pixel-ratio</code>，<code>-webkit-min-device-pixel-ratio</code>和 <code>-webkit-max-device-pixel-ratio</code>进行媒体查询，对不同dpr的设备，做一些样式适配(这里只针对webkit内核的浏览器和webview)。</p>
-<p>综合上面几个概念，一起举例说明下——<strong>以iphone6为例</strong>：</p>
-<p>设备宽高为375×667，可以理解为设备独立像素(或css像素)。</p>
-<p>dpr为2，根据上面的计算公式，其物理像素就应该×2，为750×1334。</p>
-<p>用一张图来表现，就是这样(原谅我的盗图)：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/1.gif" alt="&quot;像素示例&quot;"></p>
-<p>上图中可以看出，对于这样的css样式：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 2<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">height</span>: 2<span class="selector-tag">px</span>;</div></pre></td></tr></table></figure>
-<p>在不同的屏幕上(普通屏幕 vs retina屏幕)，css像素所呈现的大小(物理尺寸)是一致的，不同的是1个css像素所对应的物理像素个数是不一致的。</p>
-<p>在普通屏幕下，1个css像素 对应 1个物理像素(1:1)。 在retina 屏幕下，1个css像素对应 4个物理像素(1:4)。</p>
-<p><strong>位图像素</strong></p>
-<p>一个位图像素是栅格图像(如：png, jpg, gif等)最小的数据单元。每一个位图像素都包含着一些自身的显示信息(如：显示位置，颜色值，透明度等)。</p>
-<p>谈到这里，就得说一下，retina下图片的展示情况？</p>
-<p>理论上，1个位图像素对应于1个物理像素，图片才能得到完美清晰的展示。</p>
-<p>在普通屏幕下是没有问题的，但是在retina屏幕下就会出现位图像素点不够，从而导致图片模糊的情况。</p>
-<p>用一张图来表示：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/2.jpg" alt="&quot;像素示例&quot;"></p>
-<p>如上图：对于dpr=2的retina屏幕而言，1个位图像素对应于4个物理像素，由于单个位图像素不可以再进一步分割，所以只能就近取色，从而导致图片模糊(注意上述的几个颜色值)。</p>
-<p>所以，对于图片高清问题，比较好的方案就是两倍图片(@2x)。</p>
-<p>如：200×300(css pixel)img标签，就需要提供400×600的图片。</p>
-<p>如此一来，位图像素点个数就是原来的4倍，在retina屏幕下，位图像素点个数就可以跟物理像素点个数形成 1 : 1的比例，图片自然就清晰了(这也解释了之前留下的一个问题，为啥视觉稿的画布大小要×2？)。</p>
-<p>这里就还有另一个问题，如果普通屏幕下，也用了两倍图片，会怎样呢？</p>
-<p>很明显，在普通屏幕下，200×300(css pixel)img标签，所对应的物理像素个数就是200×300个，而两倍图片的位图像素个数则是200×300*4，所以就出现一个物理像素点对应4个位图像素点，所以它的取色也只能通过一定的算法(显示结果就是一张只有原图像素总数四分之一，我们称这个过程叫做downsampling)，肉眼看上去虽然图片不会模糊，但是会觉得图片缺少一些锐利度，或者是有点色差(但还是可以接受的)。</p>
-<p>用一张图片来表示：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/3.jpg" alt="&quot;像素示例&quot;"></p>
-<p>针对上面的两个问题，我做了一个demo。<br><img src="/images/blog/移动端高清多屏适配方案/4.png" alt="&quot;像素示例&quot;"></p>
-<p>demo中，100×100的图片，分别放在100×100，50×50，25×25的img容器中，在retina屏幕下的显示效果。</p>
-<p><strong>条形图</strong>，通过放大镜其实可以看出边界像素点取值的不同：</p>
-<ul>
-<li>图1，就近取色，色值介于红白之间，偏淡，图片看上去会模糊(可以理解为图片拉伸)。</li>
-<li>图2，没有就近取色，色值要么是红，要么是白，图片看上去很清晰。</li>
-<li>图3，就近取色，色值介于红白之间，偏重，图片看上去有色差，缺少锐利度(可以理解为图片挤压)。</li>
-</ul>
-<p><strong>爱字图</strong>，可以通过看文字”爱”来区分图片模糊还是清晰（如果看上去不明显，请下载<a href="http://upyun.cocimg.com/cocoachina/demo.png" target="_blank" rel="external">原图</a>）。</p>
-<h2 id="几个问题"><a href="#几个问题" class="headerlink" title="几个问题"></a>几个问题</h2><p>这里说一下，移动端H5开发，在不同分辨率，不同屏幕手机下会遇到的几个经典问题。</p>
-<p><strong>retina下，图片高清问题</strong></p>
-<p>这个问题上面已经介绍过解决方案了：两倍图片(@2x)，然后图片容器缩小50%。</p>
-<p>如：图片大小，400×600;</p>
-<ul>
-<li>img标签</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 200<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">height</span>: 300<span class="selector-tag">px</span>;</div></pre></td></tr></table></figure>
-<ul>
-<li>背景图片</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">width: 200px;</div><div class="line">height: 300px;</div><div class="line">background-image: url(image@2x.jpg);</div><div class="line">background-size: 200px 300px; // 或者: background-size: contain;</div></pre></td></tr></table></figure>
-<p>这样的缺点，很明显，普通屏幕下：</p>
-<ol>
-<li>同样下载了@2x的图片，造成资源浪费。</li>
-<li>图片由于downsampling，会失去了一些锐利度（或是色差）。</li>
-</ol>
-<p>所以最好的解决办法是：<code>不同的dpr下，加载不同的尺寸的图片</code>。</p>
-<p>不论是通过css媒体查询，还是通过javascript条件判断都是可以的。</p>
-<p>那么问题来了，这样的话，不就是要准备两套图片了嘛？(@1x 和@2x)</p>
-<p>我想，做的好的公司，都会有这么一个<code>图片服务器</code>，通过url获取参数，然后可以控制图片质量，也可以将图片裁剪成不同的尺寸。</p>
-<p>所以我们只需上传大图(@2x)，其余小图都交给图片服务器处理，我们只要负责拼接url即可。</p>
-<p>如，这样一张原图（<a href="https://img.alicdn.com/tps/TB1AGMmIpXXXXafXpXXXXXXXXXX.jpg" target="_blank" rel="external">点击预览</a>），可以类似这样，进行图片裁剪：</p>
-<p>// 200×200</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/5.jpg" alt="&quot;示例图片 200*200&quot;"></p>
-<p>// 100×100</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/6.jpg" alt="&quot;示例图片 100*100&quot;"></p>
-<p>(ps: 当然裁剪只是对原图的等比裁剪，得保证图片的清晰嘛~)</p>
-<p><strong>retina下，border: 1px问题</strong></p>
-<p>这大概是设计师最敏感，最关心的问题了。</p>
-<p>首先得说一下，为什么存在retina下，<code>border: 1px</code>这一说？</p>
-<p>我们正常的写css，像这样<code>border: 1px;</code>，在retina屏幕下，会有什么问题吗？</p>
-<p>先来，来看看下面的图：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/7.jpg" alt="&quot;示例图片&quot;"></p>
-<p>上面两张图分别是在iPhone3gs(dpr=1)和iPhone5(dpr=2)下面的测试效果，对比来看，对于1px的border的展示，它们是一致的，并无区别。</p>
-<p>那么retina显示屏的优势在哪里，设计师为何觉得高清屏下(右图)这个线条粗呢？明明和左右一样的~</p>
-<p>还是通过一张图来解释(原谅我再次盗图)：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/8.jpg" alt="&quot;示例图片&quot;"></p>
-<p>上图中，对于一条1px宽的直线，它们在屏幕上的物理尺寸(灰色区域)的确是相同的，不同的其实是屏幕上最小的物理显示单元，即物理像素，所以对于一条直线，iphone5它能显示的最小宽度其实是图中的红线圈出来的灰色区域，用css来表示，理论上说是0.5px。</p>
-<p>所以，设计师想要的retina下<code>border: 1px;</code>，其实就是1物理像素宽，对于css而言，可以认为是<code>border: 0.5px;</code>，这是retina下(dpr=2)下能显示的最小单位。</p>
-<p>然而，无奈并不是所有手机浏览器都能识别<code>border: 0.5px;</code>，ios7以下，android等其他系统里，0.5px会被当成为0px处理，那么如何实现这0.5px呢？</p>
-<p>最简单的一个做法就是这样(元素scale)：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.scale</span>&#123;</div><div class="line">    <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.scale</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">    <span class="attribute">content</span>:<span class="string">""</span>;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">bottom</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">left</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">right</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">border-bottom</span>:<span class="number">1px</span> solid <span class="number">#ddd</span>;</div><div class="line">    <span class="attribute">-webkit-transform</span>:<span class="built_in">scaleY</span>(.5);</div><div class="line">    <span class="attribute">-webkit-transform-origin</span>:<span class="number">0</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>我们照常写<code>border-bottom: 1px solid #ddd;</code>，然后通过<code>transform: scaleY(.5)</code>缩小0.5倍来达到0.5px的效果，但是这样hack实在是不够通用(如：圆角等)，写起来也麻烦。</p>
-<p>当然还有其他好多hack方法，网上都可以搜索到，但是各有利弊，这里比较推荐的还是页面scale的方案，是比较通用的，几乎满足所有场景。</p>
-<p>对于iphone5(dpr=2)，添加如下的meta标签，设置viewport(scale 0.5)：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=640,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no"</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>这样，页面中的所有的<code>border: 1px</code>都将缩小0.5，从而达到<code>border: 0.5px;</code>的效果。</p>
-<p>看一下实现后的效果图对比(右图为优化过的)：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/9.jpg" alt="&quot;效果对比图&quot;"></p>
-<p>然而，页面scale，必然会带来一些问题：</p>
-<ol>
-<li>字体大小会被缩放</li>
-<li>页面布局会被缩放(如: div的宽高等)</li>
-</ol>
-<p>这两个问题后面讲到…</p>
-<p><strong>多屏适配布局问题</strong></p>
-<p>移动端布局，为了适配各种大屏手机，目前最好用的方案莫过于使用相对单位<code>rem</code>。</p>
-<p>基于rem的原理，我们要做的就是: 针对不同手机<code>屏幕尺寸</code>和<code>dpr</code>动态的改变根节点html的<code>font-size</code>大小(基准值)。</p>
-<p>这里我们提取了一个公式(rem表示基准值)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rem = <span class="built_in">document</span>.documentElement.clientWidth * dpr / <span class="number">10</span></div></pre></td></tr></table></figure>
-<p>说明：</p>
-<ol>
-<li>乘以dpr，是因为页面有可能为了实现1px border页面会缩放(scale) 1/dpr 倍(如果没有，dpr=1)。</li>
-<li>除以10，是为了取整，方便计算(理论上可以是任何值)</li>
-</ol>
-<p>所以就像下面这样，html的font-size可能会：</p>
-<ul>
-<li>iPhone3gs: 320px / 10 = 32px</li>
-<li>iPhone4/5: 320px * 2 / 10 = 64px</li>
-<li>iPhone6: 375px * 2 / 10 = 75px</li>
-</ul>
-<p>对于动态改变根节点html的<code>font-size</code>，我们可以通过css做，也可以通过javascript做。</p>
-<p><strong>css方式</strong>，可以通过设备宽度来媒体查询来改变html的<code>font-size</code>：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">html&#123;font-size: 32px;&#125;</div><div class="line">//iphone 6</div><div class="line">@media (min-device-width : 375px) &#123;</div><div class="line">   html&#123;font-size: 64px;&#125;</div><div class="line">&#125;</div><div class="line">// iphone6 plus</div><div class="line">@media (min-device-width : 414px) &#123;</div><div class="line">    html&#123;font-size: 75px;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>缺点：通过设备宽度范围区间这样的媒体查询来动态改变<code>rem</code>基准值，其实不够精确，比如：宽度为360px 和 宽度为320px的手机，因为屏宽在同一范围区间内(&lt;375px)，所以会被同等对待(<code>rem</code>基准值相同)，而事实上他们的屏幕宽度并不相等，它们的布局也应该有所不同。最终，结论就是：这样的做法，没有做到足够的精确，但是够用。</p>
-<p><strong>javascript方式</strong>，通过上面的公式，计算出基准值rem，然后写入样式，大概如下(代码参考自kimi的m-base模块)</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var dpr, rem, scale;</div><div class="line">var docEl = document.documentElement;</div><div class="line">var fontEl = document.createElement('style');</div><div class="line">var metaEl = document.querySelector('meta[name="viewport"]');</div><div class="line">scale = 1 / dpr;</div><div class="line">dpr = win.devicePixelRatio || 1;</div><div class="line">rem = docEl.clientWidth * dpr / 10;</div><div class="line">// 设置viewport，进行缩放，达到高清效果</div><div class="line">metaEl.setAttribute('content', 'width=' + dpr * docEl.clientWidth + ',</div><div class="line">                     initial-scale=' + scale + ',maximum-scale=' + scale + ',</div><div class="line">                     minimum-scale=' + scale + ',user-scalable=no');</div><div class="line">// 设置data-dpr属性，留作的css hack之用</div><div class="line">docEl.setAttribute('data-dpr', dpr);</div><div class="line">// 动态写入样式</div><div class="line">docEl.firstElementChild.appendChild(fontEl);</div><div class="line">fontEl.innerHTML = 'html&#123;font-size:' + rem + 'px!important;&#125;';</div><div class="line">// 给js调用的，某一dpr下rem和px之间的转换函数</div><div class="line">window.rem2px = function(v) &#123;</div><div class="line">    v = parseFloat(v);</div><div class="line">    return v * rem;</div><div class="line">&#125;;</div><div class="line">window.px2rem: function(v) &#123;</div><div class="line">    v = parseFloat(v);</div><div class="line">    return v / rem;</div><div class="line">&#125;;</div><div class="line">window.dpr = dpr;</div><div class="line">window.rem = rem;</div></pre></td></tr></table></figure>
-<p>这种方式，可以精确地算出不同屏幕所应有的rem基准值，缺点就是要加载这么一段js代码，但个人觉得是这是目前最好的方案了。</p>
-<p>因为这个方案同时解决了三个问题：</p>
-<ol>
-<li>border: 1px问题</li>
-<li>图片高清问题</li>
-<li>屏幕适配布局问题</li>
-</ol>
-<p>说到布局，自然就得回答一下最初的留下的那个问题：如何在css编码中还原视觉稿的真实宽高？</p>
-<p>前提条件：</p>
-<ol>
-<li>拿到的是一个针对iPhone6的高清视觉稿 <code>750×1334</code></li>
-<li>采用上述的高清方案(js代码)。</li>
-</ol>
-<p>如果有一个区块，在psd文件中量出：宽高<code>750×300px</code>的div，那么如何转换成rem单位呢？</p>
-<p>公式如下：<br><figure class="highlight basic"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">rem = px / 基准值;</span></div></pre></td></tr></table></figure></p>
-<p>对于一个iPhone6的视觉稿，它的基准值就是75(之前有提到)；</p>
-<p>所以，在确定了视觉稿(即确定了基准值)后，通常我们会用less写一个mixin，像这样：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// 例如: .px2rem(height, 80);</div><div class="line">.px2rem(@name, @px)&#123;</div><div class="line">    @&#123;name&#125;: @px / 75 * 1rem;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>所以，对于宽高750×300px的div，我们用less就这样写：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.px2rem</span>(<span class="selector-tag">width</span>, 750);</div><div class="line"><span class="selector-class">.px2rem</span>(<span class="selector-tag">height</span>, 300);</div></pre></td></tr></table></figure>
-<p>转换成html，就是这样：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">width: 10rem; // -&gt; 750px</div><div class="line">height: 4rem; // -&gt; 300px</div></pre></td></tr></table></figure>
-<p>最后因为dpr为2，页面scale了0.5，所以在手机屏幕上显示的真实宽高应该是<code>375×150px</code>，就刚刚好。</p>
-<p>倘若页面并没有scale 0.5，我们的代码就得这样：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.px2rem</span>(<span class="selector-tag">width</span>, 375);</div><div class="line"><span class="selector-class">.px2rem</span>(<span class="selector-tag">height</span>, 150);</div></pre></td></tr></table></figure>
-<p>这样的宽高，我们往往是这样得来的：</p>
-<ol>
-<li>将750×1334的视觉稿转成375×667的大小后，再去量这个区块的大小(感觉好傻)。</li>
-<li>在750×1334量得区块宽高是750×300px后，再口算除以2(感觉好麻烦)。</li>
-</ol>
-<p>最后给出一张没有布局适配(上图)和用rem布局适配(下图)的对比图：</p>
-<p><img src="/images/blog/移动端高清多屏适配方案/10.png" alt="&quot;布局适配对比图&quot;"></p>
-<p>(上面的手机分别是：iPhone3gs, iPhone5, iPhone6)</p>
-<p>很明显可以看出，rem适配的各个区块的宽高都会随着手机屏宽而改变，最最明显的可以看一下图片列表那部分，最后一张图视觉稿要求只出现一点点，rem布局在任何屏幕下都显示的很好。</p>
-<p>字体大小问题</p>
-<p>既然上面的方案会使得页面缩放(scale)，对于页面区块的宽高，我们可以依赖高清视觉稿，因为视觉稿本来就×2了，我们直接量就可以了，那么对于字体该如何处理呢？</p>
-<p>对于字体缩放问题，设计师原本的要求是这样的：任何手机屏幕上字体大小都要统一，所以我们针对不同的分辨率(dpr不同)，会做如下处理：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">font-size</span>: 16<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-attr">[data-dpr="2"]</span> <span class="selector-tag">input</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">32px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>(注意，字体不可以用rem，误差太大了，且不能满足任何屏幕下字体大小相同)</p>
-<p>为了方便，我们也会用less写一个mixin：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">.px2px(@name, @px)&#123;</div><div class="line">    @&#123;name&#125;: round(@px / 2) * 1px;</div><div class="line">    [data-dpr="2"] &amp; &#123;</div><div class="line">        @&#123;name&#125;: @px * 1px;</div><div class="line">    &#125;</div><div class="line">    // for mx3</div><div class="line">    [data-dpr="2.5"] &amp; &#123;</div><div class="line">        @&#123;name&#125;: round(@px * 2.5 / 2) * 1px;</div><div class="line">    &#125;</div><div class="line">    // for 小米note</div><div class="line">    [data-dpr="2.75"] &amp; &#123;</div><div class="line">        @&#123;name&#125;: round(@px * 2.75 / 2) * 1px;</div><div class="line">    &#125;</div><div class="line">    [data-dpr="3"] &amp; &#123;</div><div class="line">        @&#123;name&#125;: round(@px / 2 * 3) * 1px</div><div class="line">    &#125;</div><div class="line">    // for 三星note4</div><div class="line">    [data-dpr="4"] &amp; &#123;</div><div class="line">        @&#123;name&#125;: @px * 2px;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>(注意：html的data-dpr属性就是之前js方案里面有提到的，这里就有用处了)</p>
-<p>根据经验和测试，还是会出现这些奇奇葩葩的dpr，这里做了统一兼容~</p>
-<p>用的时候，就像这样：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.px2px</span>(<span class="selector-tag">font-size</span>, 32);</div></pre></td></tr></table></figure>
-<p>当然对于其他css属性，如果也要求不同dpr下都保持一致的话，也可以这样操作，如：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.px2px</span>(<span class="selector-tag">padding</span>, 20);</div><div class="line"><span class="selector-class">.px2px</span>(<span class="selector-tag">right</span>, 8);</div></pre></td></tr></table></figure>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>上面对移动端H5高清和多屏适配的一些方案总结，和知识讲解，不对的地方，还请指出来。</p>
-<p>参考文章</p>
-<p><a href="http://www.smashingmagazine.com/2012/08/20/towards-retina-web/" target="_blank" rel="external">http://www.smashingmagazine.com/2012/08/20/towards-retina-web/</a></p>
-<p><a href="http://www.paintcodeapp.com/news/iphone-6-screens-demystified" target="_blank" rel="external">http://www.paintcodeapp.com/news/iphone-6-screens-demystified</a></p>
-<p><a href="http://www.inserthtml.com/2012/09/designing-retina-devices/" target="_blank" rel="external">http://www.inserthtml.com/2012/09/designing-retina-devices/</a></p>
-<p><a href="http://iconmoon.com/blog2/iphone-6-plus-screen-size/" target="_blank" rel="external">http://iconmoon.com/blog2/iphone-6-plus-screen-size/</a></p>
-<p><a href="http://dieulot.net/css-retina-hairline" target="_blank" rel="external">http://dieulot.net/css-retina-hairline</a></p>
-
-          
+          简介html5 中的 Web Storage 包括了两种存储方式：sessionStorage 和 localStorage。 sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问，会话结束后数据也随之销毁。localStorage 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/21/Web-Storage-学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -852,8 +602,13 @@ key：存储store的key名
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -876,20 +631,17 @@ key：存储store的key名
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/09/垂直居中实现方式总结/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/12/移动端高清、多屏适配方案/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -897,36 +649,26 @@ key：存储store的key名
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/09/垂直居中实现方式总结/" itemprop="url">
-                  垂直居中实现方式总结
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/12/移动端高清、多屏适配方案/" itemprop="url">[转] 移动端高清、多屏适配方案</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-09T19:17:16+08:00">
-              2016-11-09
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-12T11:08:49+08:00">
+                2016-11-12
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-12T19:46:55+08:00">
-              2016-11-12
-            </time>
             
           </span>
 
@@ -937,18 +679,17 @@ key：存储store的key名
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -958,48 +699,23 @@ key：存储store的key名
       
         
           
-            <p>在网页制作过程中，我们经常要用到图片、文字的垂直居中。今天就总结一下垂直居中的方法。</p>
-<h2 id="方法一-利用-line-height-实现垂直居中"><a href="#方法一-利用-line-height-实现垂直居中" class="headerlink" title="方法一 利用 line-height 实现垂直居中"></a>方法一 利用 <code>line-height</code> 实现垂直居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#example1 &#123;</div><div class="line">    height: 100px;</div><div class="line">    line-height: 100px;</div><div class="line">    background: #161616;</div><div class="line">    color: #fff;</div><div class="line">    width: 200px;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example1"</span>&gt;</span></div><div class="line">    单行文字垂直居中</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#example1 {height: 100px;line-height: 100px;background: #161616;color: #fff;width: 200px;}</style></p>
-<div id="example1">单行文字垂直居中</div>
+          背景
+开发移动端H5页面
+面对不同分辨率的手机
+面对不同屏幕尺寸的手机
 
-<p>这种方法适用于单行文本垂直居中,如果文本内容太长，出现了换行，换行后的内容会溢出。</p>
-<h2 id="方法二-利用-display-table-实现垂直居中"><a href="#方法二-利用-display-table-实现垂直居中" class="headerlink" title="方法二 利用  display: table 实现垂直居中"></a>方法二 利用  <code>display: table</code> 实现垂直居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#example2 &#123;</div><div class="line">    height: 100px;</div><div class="line">    background: #161616;</div><div class="line">    color: #fff;</div><div class="line">    width: 400px;</div><div class="line">    overflow: hidden;</div><div class="line">    display: table;</div><div class="line">&#125;</div><div class="line">#example2 .inner&#123;</div><div class="line">    display: table-cell;</div><div class="line">    vertical-align: middle;</div><div class="line">    height: 50px;</div><div class="line">    background:#999;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example2"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>块区域垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#example2 {height: 100px;color: #fff; width: 400px;overflow: hidden;display: table;}#example2 .inner{display: table-cell;vertical-align: middle;background:#999;}</style></p>
-<div id="example2"><div class="inner">块区域垂直居中</div></div>
+视觉稿在前端开发之前，视觉MM会给我们一个psd文件，称之为视觉稿。
+对于移动端开发而言，为了做到页面高清的效果，视觉稿的规范往往会遵循以下两点：
 
-<h2 id="方法三-margin-填充"><a href="#方法三-margin-填充" class="headerlink" title="方法三 margin 填充"></a>方法三 <code>margin</code> 填充</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#example3 &#123;</div><div class="line">    height: 100px;</div><div class="line">    background: #161616;</div><div class="line">    color: #fff;</div><div class="line">    width: 400px;</div><div class="line">    overflow: hidden;</div><div class="line">&#125;</div><div class="line">#example3 .inner&#123;</div><div class="line">    margin-left: auto;</div><div class="line">    margin-right: auto;</div><div class="line">    margin-top: calc((100px - 50px)/2);</div><div class="line">    height: 50px;</div><div class="line">    background:#999;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example3"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>块区域垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#example3 {height: 100px;background: #161616;color: #fff;width: 400px;overflow: hidden;}#example3 .inner{margin-left: auto;margin-right: auto;margin-top: calc((100px - 50px)/2);height: 50px;background:#999;}</style></p>
-<div id="example3"><div class="inner">块区域垂直居中</div></div>
-
-<p>这种方法需要知道内外容器的大小</p>
-<h2 id="方法四-经典-absolute-布局上下文垂直居中"><a href="#方法四-经典-absolute-布局上下文垂直居中" class="headerlink" title="方法四 经典 absolute 布局上下文垂直居中"></a>方法四 经典 absolute 布局上下文垂直居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">#example4 &#123;</div><div class="line">    width: 400px;</div><div class="line">    height: 100px;</div><div class="line">    background: #161616;</div><div class="line">    color: #fff;</div><div class="line">    position: relative;</div><div class="line">&#125;</div><div class="line">#example4 .inner&#123;</div><div class="line">    height: 50px;</div><div class="line">    width: 200px;</div><div class="line">    position: absolute;</div><div class="line">    left: 50%;</div><div class="line">    top: 50%;</div><div class="line">    margin-top: -25px;</div><div class="line">    margin-left: -100px;</div><div class="line">    background:#999;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example4"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>块区域垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#example4 {width: 400px;height: 100px;background: #161616;color: #fff;position: relative;}#example4 .inner{height: 50px;width: 200px;position: absolute;left: 50%;top: 50%; margin-top: -25px;margin-left: -100px;background:#999;}</style></p>
-<div id="example4"><div class="inner">块区域垂直居中</div></div>
-
-<p>这种方法内部容器的宽高，外部容器的宽高可以不定</p>
-<h2 id="方法五-Css3下-absolute-布局上下文垂直居中"><a href="#方法五-Css3下-absolute-布局上下文垂直居中" class="headerlink" title="方法五 Css3下 absolute 布局上下文垂直居中"></a>方法五 Css3下 absolute 布局上下文垂直居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#example5 &#123;</div><div class="line">    width: 400px;</div><div class="line">    height: 100px;</div><div class="line">    background: #161616;</div><div class="line">    color: #fff;</div><div class="line">    position: relative;</div><div class="line">&#125;</div><div class="line">#example5 .inner&#123;</div><div class="line">    position: absolute;</div><div class="line">    left: 50%;</div><div class="line">    top: 50%;</div><div class="line">    background: #999;</div><div class="line">    transform: translate(-50%, -50%);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example5"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>块区域垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#example5 {width: 400px;height: 100px;background: #161616;color: #fff;position: relative;}#example5 .inner{position: absolute;left: 50%;top: 50%;background: #999;transform: translate(-50%, -50%);}</style></p>
-<div id="example5"><div class="inner">块区域垂直居中</div></div>
-
-<p>这种方法内外容器都可以是不定的</p>
-<h2 id="方法六-利用margin：auto-居中"><a href="#方法六-利用margin：auto-居中" class="headerlink" title="方法六 利用margin：auto 居中"></a>方法六 利用margin：auto 居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">#expample6 &#123;</div><div class="line">    width: 400px;</div><div class="line">    height: 100px;</div><div class="line">    background: #eee;</div><div class="line">    position: relative;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#expample6 .inner &#123;</div><div class="line">    position: absolute;</div><div class="line">    top: 0;</div><div class="line">    bottom: 0;</div><div class="line">    left: 0;</div><div class="line">    right: 0;</div><div class="line">    margin: auto;</div><div class="line">    height: 50px;</div><div class="line">    width: 70%;</div><div class="line">    background: #aaa;</div><div class="line">    color:#222;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"expample6"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>Content here<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#expample6 {width: 400px;height: 100px;background: #eee;position: relative;}#expample6 .inner {position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;height: 50px;width: 70%;background: #aaa;color:#222;}</style><div id="expample6"><div class="inner">块区域垂直居中</div></div></p>
-<h2 id="方法七-利用-Flex布局-居中"><a href="#方法七-利用-Flex布局-居中" class="headerlink" title="方法七 利用 Flex布局 居中"></a>方法七 利用 Flex布局 居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#expample7 &#123;</div><div class="line">    width: 400px;</div><div class="line">    height: 100px;</div><div class="line">    background: #eee;</div><div class="line">    display: flex;</div><div class="line">    justify-content: center;</div><div class="line">    align-items: center;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#expample7 .inner &#123;</div><div class="line">    height: 50px;</div><div class="line">    width: 70%;</div><div class="line">    background: #aaa;</div><div class="line">    color:#222;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"expample7"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span>Content here<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>示例：</p>
-<p><style type="text/css">#expample7 {width: 400px;height: 100px;background: #eee;display: flex;justify-content: center;align-items: center;}#expample7 .inner {height: 50px;width: 70%;background: #aaa;color:#222;}</style></p>
-<div id="expample7"><div class="inner">块区域垂直居中</div></div>
-
-
-
-
-          
+首先，选取一款手机的屏幕宽高作为基准(以前是iPhone4的320×480，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/12/移动端高清、多屏适配方案/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1012,8 +728,13 @@ key：存储store的key名
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1036,20 +757,17 @@ key：存储store的key名
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/05/CSS 实现固定宽高比/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/09/垂直居中实现方式总结/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1057,36 +775,26 @@ key：存储store的key名
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/05/CSS 实现固定宽高比/" itemprop="url">
-                  css 实现固定宽高比
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/09/垂直居中实现方式总结/" itemprop="url">垂直居中实现方式总结</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-05T18:44:46+08:00">
-              2016-11-05
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-09T19:17:16+08:00">
+                2016-11-09
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-05T19:04:56+08:00">
-              2016-11-05
-            </time>
             
           </span>
 
@@ -1097,18 +805,17 @@ key：存储store的key名
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1118,43 +825,16 @@ key：存储store的key名
       
         
           
-            <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>以前遇到一个需求，页面显示一个弹窗，弹窗宽度是随页面宽度变化而变化的，要求弹窗的高度和宽度以一个固定的宽高比显示，当时使用js来监听window的resize事件实现的，现在回头看看，完全可以用css实现。</p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>先看代码</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">50%</span>;</div><div class="line">        <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.fill</span>&#123;</div><div class="line">        <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">padding-bottom</span>: <span class="number">60%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.content</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">position</span>: absolute;</div><div class="line">        <span class="attribute">background</span>: <span class="number">#ccc</span>;</div><div class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fill"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<style>
-.box{
-        width: 50%;
-        position: relative;
-        background: #ccc;
-}
-.box .fill{
-        height: 0;
-        padding-bottom: 60%;
-}
-.box .content{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: #ccc;
-        left: 0;
-        top: 0;
-        font-size:20px;
-}
-</style>
-
-<p><div class="box"><div class="fill"></div><div class="content">Example</div></div><br>主要实现思路是先定义一个容器 <code>div.box</code>，设置它的 <code>positin</code> 为 <code>relative</code> , 用一个 <code>div.fill</code> 填充它，设置这个div的 <code>height</code> 为 <code>0</code> , <code>padding-bottom</code> 为 <code>60%</code> , 这个 div 负责把外层的 div 的高度撑起来，并且是按照宽高比 <code>5:3(100%:60%)</code> 的固定比例，再放一个内容 <code>div.content</code> , 设置宽高同为 <code>100%</code>, <code>positin</code> 为 <code>absolute</code>，现在这个基本上就满足需求了。当然，这个需求还有别的解决方案，但思路基本上是一致的。</p>
-<h2 id="其他实现"><a href="#其他实现" class="headerlink" title="其他实现"></a>其他实现</h2><ul>
-<li>利用 <code>margin</code> 实现</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">50%</span>;</div><div class="line">        <span class="attribute">position</span>: relative;</div><div class="line">        <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.fill</span>&#123;</div><div class="line">        <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">margin-bottom</span>: <span class="number">60%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.content</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">position</span>: absolute;</div><div class="line">        <span class="attribute">background</span>: <span class="number">#ccc</span>;</div><div class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fill"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li>利用 <code>:before</code> 或 <code>:after</code> 伪元素实现</li>
-</ul>
-<p>上面两种实现方式有一个共同的缺点，增加了一个 <code>div.fill</code> 元素，这个元素可以用伪元素替换。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">50%</span>;</div><div class="line">        <span class="attribute">position</span>: relative;</div><div class="line">        <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.box</span><span class="selector-pseudo">:before</span>&#123;</div><div class="line">        <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">display</span>: block;</div><div class="line">        <span class="attribute">margin-bottom</span>: <span class="number">60%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.content</span>&#123;</div><div class="line">        <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">        <span class="attribute">position</span>: absolute;</div><div class="line">        <span class="attribute">background</span>: <span class="number">#ccc</span>;</div><div class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-          
+          在网页制作过程中，我们经常要用到图片、文字的垂直居中。今天就总结一下垂直居中的方法。
+方法一 利用 line-height 实现垂直居中1234567891011#example1 &#123;    height: 100px;    line-height: 100px;    backgrou
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/09/垂直居中实现方式总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1167,8 +847,13 @@ key：存储store的key名
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1191,20 +876,17 @@ key：存储store的key名
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2015/11/26/观察者模式实现/">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2016/11/05/CSS 实现固定宽高比/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="musishui">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="musishui's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="musishui's Blog" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1212,36 +894,26 @@ key：存储store的key名
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/11/26/观察者模式实现/" itemprop="url">
-                  javascript 观察者模式实现
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/05/CSS 实现固定宽高比/" itemprop="url">css 实现固定宽高比</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-11-26T17:16:22+08:00">
-              2015-11-26
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-05T18:44:46+08:00">
+                2016-11-05
+              </time>
+            
 
-            &nbsp;|&nbsp;
+            
 
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-check-o"></i>
-            </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2015-11-27T11:48:26+08:00">
-              2015-11-27
-            </time>
             
           </span>
 
@@ -1252,18 +924,17 @@ key：存储store的key名
           
 
           
-
-          
           
 
           
+
           
+
           
 
         </div>
       </header>
     
-
 
     <div class="post-body" itemprop="articleBody">
 
@@ -1273,14 +944,17 @@ key：存储store的key名
       
         
           
-            <blockquote>
-<p>观察者模式（有时又被称为发布（publish ）-订阅（Subscribe）模式）是软件设计模式的一种。在此种模式中，一个目标物件管理所有相依于它的观察者物件，并且在它本身的状态改变时主动发出通知。这通常透过呼叫各观察者所提供的方法来实现。此种模式通常被用来实现事件处理系统。</p>
-</blockquote>
-<h2 id="基本简介"><a href="#基本简介" class="headerlink" title="基本简介"></a>基本简介</h2><p>观察者模式（Observer）完美的将观察者和被观察的对象分离开。举个例子，用户界面可以作为一个观察者，业务数据是被观察者，用户界面观察业务数据的变化，发现数据变化后，就显示在界面上。面向对象设计的一个原则是：系统中的每个类将重点放在某一个功能上，而不是其他方面。一个对象只做一件事情，并且将他做好。观察者模式在模块之间划定了清晰的界限，提高了应用程序的可维护性和重用性。</p>
-<p>观察者设计模式定义了对象间的一种一对多的依赖关系，以便一个对象的状态发生变化时，所有依赖于它的对象都得到通知并自动刷新。</p>
-<p>由于观察者模式有诸多优点，他在日常编程中随处可见，比如响应事件，作为一名程序猿，掌握他是义不容辞的责任。</p>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">subject</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (!(<span class="keyword">this</span> <span class="keyword">instanceof</span> subject)) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> subject();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">this</span>._eventList = &#123;&#125;;</div><div class="line">&#125;</div><div class="line">subject.prototype = &#123;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 注册观察者</div><div class="line">     * @param  &#123;string&#125;   eName   [注册的事件名称]</div><div class="line">     * @param  &#123;Function&#125; fn      [响应事件的方法]</div><div class="line">     * @param  &#123;object&#125;   [scope] [响应事件的方法的上下文对象]</div><div class="line">     */</div><div class="line">    on: <span class="function"><span class="keyword">function</span>(<span class="params">eName, fn, scope</span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (!eName == <span class="literal">null</span>) <span class="keyword">return</span>;</div><div class="line">        <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(fn) === <span class="string">'[object Function]'</span>) &#123;</div><div class="line">            eName = eName.toLowerCase();</div><div class="line">            <span class="keyword">if</span> (!<span class="keyword">this</span>._eventList[eName]) &#123;</div><div class="line">                <span class="keyword">this</span>._eventList[eName] = [];</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">this</span>._eventList[eName].push(&#123;</div><div class="line">                <span class="attr">fn</span>: fn,</div><div class="line">                <span class="attr">scope</span>: scope || <span class="literal">null</span></div><div class="line">            &#125;);</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 注销观察者 </div><div class="line">     * 取消指定方法对指定事件的响应</div><div class="line">     * 如果事件为空，注销所有事件的响应</div><div class="line">     * 如果方法为空，注销指定事件的所有响应方法</div><div class="line">     * @param  &#123;string&#125;   [eName] [注销的事件名称，]</div><div class="line">     * @param  &#123;Function&#125; [fn]    [注销的响应事件的方法]</div><div class="line">     */</div><div class="line">    off: <span class="function"><span class="keyword">function</span>(<span class="params">eName, fn</span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (eName == <span class="literal">null</span>) &#123;</div><div class="line">            <span class="keyword">this</span>._eventList = &#123;&#125;;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (fn == <span class="literal">null</span>) &#123;</div><div class="line">            <span class="keyword">delete</span> <span class="keyword">this</span>._eventList[eName]</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">var</span> fns = <span class="keyword">this</span>._eventList[eName];</div><div class="line">            <span class="keyword">if</span> (fns &amp;&amp; fns.length) &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">var</span> l = fns.length; l--;) &#123;</div><div class="line">                    <span class="keyword">if</span> (fns[l] == fn) &#123;</div><div class="line">                        fns.slice(l, <span class="number">1</span>);</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 发布订阅事件</div><div class="line">     * @param  &#123;string&#125;   eName   [事件名称]</div><div class="line">     * @param  &#123;object&#125;   [args]  [事件参数]</div><div class="line">     */</div><div class="line">    fire: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</div><div class="line">        <span class="keyword">var</span> eName = args.shift();</div><div class="line">        <span class="keyword">if</span> (!eName) <span class="keyword">return</span>;</div><div class="line">        eName = eName.toLowerCase();</div><div class="line">        <span class="keyword">var</span> list = <span class="keyword">this</span>._eventList[eName] || [];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, l = list.length; i &lt; l; i++) &#123;</div><div class="line">            <span class="keyword">var</span> dict = list[i];</div><div class="line">            <span class="keyword">var</span> fn = dict.fn;</div><div class="line">            <span class="keyword">var</span> scope = dict.scope;</div><div class="line">            fn.apply(scope || <span class="literal">null</span>, args);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+          问题以前遇到一个需求，页面显示一个弹窗，弹窗宽度是随页面宽度变化而变化的，要求弹窗的高度和宽度以一个固定的宽高比显示，当时使用js来监听window的resize事件实现的，现在回头看看，完全可以用css实现。
+实现先看代码
+12345678910111213141516.box&#123;    
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/05/CSS 实现固定宽高比/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1293,8 +967,134 @@ key：存储store的key名
       
     </div>
 
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://musishui.github.io/2015/11/26/观察者模式实现/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="musishui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="musishui's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/11/26/观察者模式实现/" itemprop="url">javascript 观察者模式实现</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-26T17:16:22+08:00">
+                2015-11-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+观察者模式（有时又被称为发布（publish ）-订阅（Subscribe）模式）是软件设计模式的一种。在此种模式中，一个目标物件管理所有相依于它的观察者物件，并且在它本身的状态改变时主动发出通知。这通常透过呼叫各观察者所提供的方法来实现。此种模式通常被用来实现事件处理系统。
+
+基本简介观察者模式
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/11/26/观察者模式实现/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
       
 
       
@@ -1332,6 +1132,7 @@ key：存储store的key名
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -1344,22 +1145,29 @@ key：存储store的key名
                src="/images/avatar.jpg"
                alt="musishui" />
           <p class="site-author-name" itemprop="name">musishui</p>
-          <p class="site-description motion-element" itemprop="description">musishui 的个人博客</p>
+           
+              <p class="site-description motion-element" itemprop="description">musishui 的个人博客</p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
           
 
           
+
+          
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">16</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1386,6 +1194,8 @@ key：存储store的key名
 
       
 
+      
+
     </div>
   </aside>
 
@@ -1399,7 +1209,7 @@ key：存储store的key名
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1425,9 +1235,13 @@ key：存储store的key名
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1447,6 +1261,15 @@ key：存储store的key名
 
 
   
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1472,33 +1295,36 @@ key：存储store的key名
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
 
 
 
   
-
 
 
   
@@ -1511,7 +1337,30 @@ key：存储store的key名
 
 
 
+
   
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
   
 
   
@@ -1519,8 +1368,6 @@ key：存储store的key名
   
 
   
-  
-
 
 </body>
 </html>
