@@ -376,7 +376,7 @@
 <p>所以说，物理像素和设备独立像素之间存在着一定的对应关系，这就是接下来要说的设备像素比。</p>
 <p><strong>设备像素比(device pixel ratio)</strong></p>
 <p>设备像素比(简称dpr)定义了物理像素和设备独立像素的对应关系，它的值可以用如下的公式的得到：</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设备像素比 = 物理像素 / 设备独立像素 <span class="comment">// 在某一方向上，x方向或者y方向</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">设备像素比 = 物理像素 / 设备独立像素 <span class="comment">// 在某一方向上，x方向或者y方向</span></div></pre></td></tr></table></figure>
 <p>在javascript中，可以通过<code>window.devicePixelRatio</code>获取到当前设备的dpr。</p>
 <p>在css中，可以通过<code>-webkit-device-pixel-ratio</code>，<code>-webkit-min-device-pixel-ratio</code>和 <code>-webkit-max-device-pixel-ratio</code>进行媒体查询，对不同dpr的设备，做一些样式适配(这里只针对webkit内核的浏览器和webview)。</p>
 <p>综合上面几个概念，一起举例说明下——<strong>以iphone6为例</strong>：</p>
@@ -694,7 +694,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -707,7 +707,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
